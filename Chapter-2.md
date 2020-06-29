@@ -16,3 +16,6 @@ Autoencoder training algo:
    
 "An autoencoder is composed of two neural networks: an encoder and a decoder. In our case, both have activation functions,[5] and we will be using just one intermediate layer for each. This means we have two weight matrices in each network—one from input to intermediate and then one from intermediate to latent."
 
+**Variational AutoEncoders are not GANs**
+  * they are generative models but not GANs. Afterall a GAN has a discriminator and generator, not encoder and decoder.
+  * GANs > VAEs 
