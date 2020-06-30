@@ -1,0 +1,3 @@
+## Chapter 5. Training and common challenges: GANing for success
+
+"Another way to think about overgeneralization is to start with a probability distribution of fake and real data (for example, images) and look at what the distance functions (a way to measure distance between real and fake images’ distributions) would do in cases where there should be zero probability mass. The additional loss due to these overgeneral samples could be tiny if they are not too different, for example, because these modes are close to real data in all but a few key problems such as multiple heads. An overgeneral metric would therefore allow creation of samples even when, according to the true data-generating process, there should not be any, such as a cow with multiple heads."
