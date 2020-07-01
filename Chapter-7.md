@@ -31,3 +31,5 @@ For each training iteration do
  * Take a mini-batch of random noise vectors z and generate a mini-batch of fake examples: G(z) = x*.
  * Compute D(x*) for the given mini-batch and backpropagate the binary classification loss to update θ(G) to maximize the loss.
 End for
+
+we use unsupervised discriminator because its only for real/fake classification whereas supervised is for classifying actual class. we freeze unsupervised weights in gan model to train the generator. gan model is independent of supervised discriminator, but we have it because thats the end goal of sgan!!
