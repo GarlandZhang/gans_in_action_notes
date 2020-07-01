@@ -11,7 +11,8 @@
 
 "The SGAN Discriminator, however, diverges considerably from the original GAN implementation. Instead of two, it receives three kinds of inputs: fake examples produced by the Generator (x*), real examples without labels from the training dataset (x), and real examples with labels from the training dataset (x, y), where y denotes the label for the given example x"
   * generator is unchanged but discriminator now has an extra task which is to classify the digit (if its not fake)
-  * in GAN, we use Discriminator to make Generator better. In SGAN, we goal is to make semi-supervised classifier as accurate as fully supervised classifier
+  * in GAN, we use Discriminator to make Generator better. In SGAN, we goal is to make semi-supervised classifier (discriminator) as accurate as fully supervised classifier
   
   
 ![sgan_arch](https://i.gyazo.com/d5f69f8f00aaf0b2963ff66052197c11.png)
+
