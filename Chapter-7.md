@@ -8,3 +8,10 @@
 "Semi-Supervised GAN (SGAN) is a Generative Adversarial Network whose Discriminator is a multiclass classifier. Instead of distinguishing between only two classes (real and fake), it learns to distinguish between N + 1 classes, where N is the number of classes in the training dataset, with one added for the fake examples produced by the Generator."
 
 ![semi-supervised arch](https://i.gyazo.com/1b9e78eb4c72e4e5b19d45893ee98a77.png)
+
+"The SGAN Discriminator, however, diverges considerably from the original GAN implementation. Instead of two, it receives three kinds of inputs: fake examples produced by the Generator (x*), real examples without labels from the training dataset (x), and real examples with labels from the training dataset (x, y), where y denotes the label for the given example x"
+  * generator is unchanged but discriminator now has an extra task which is to classify the digit (if its not fake)
+  * in GAN, we use Discriminator to make Generator better. In SGAN, we goal is to make semi-supervised classifier as accurate as fully supervised classifier
+  
+  
+![sgan_arch](https://i.gyazo.com/d5f69f8f00aaf0b2963ff66052197c11.png)
