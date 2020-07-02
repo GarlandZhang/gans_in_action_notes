@@ -8,5 +8,6 @@
 
 "Accordingly, in order to fool the Discriminator, it is not enough for the CGAN Generator to produce realistic-looking data. The examples it generates also need to match their labels. After the Generator is fully trained, this then allows us to specify what example we want the CGAN to synthesize by passing it the desired label."
 
-![cgan_diagram](https://i.gyazo.com/1ca8afb7ee9b2e82aaaca1fd1fda4589.png)
+![cgan_gen_diagram](https://i.gyazo.com/1ca8afb7ee9b2e82aaaca1fd1fda4589.png)
 
+![cgan_disc_diagram](https://i.gyazo.com/33ee0ebf78f2e1691107d39e0f0e31d9.png)
