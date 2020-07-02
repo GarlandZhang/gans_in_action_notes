@@ -27,3 +27,10 @@
 
 ![impl_disc](https://i.gyazo.com/3fd670020c9f3930ac01fa4c1a4f63d0.png)
 
+### Conclusion
+
+"the most impactful and promising of these is the use of conditional adversarial networks as a general-purpose solution to image-to-image translation problems. [...] Applications of image-to-image translation range from colorizing black-and-white photos to turning a daytime scene into nighttime and synthesizing a satellite view from a map view."
+
+"One of the most successful early implementations based on the Conditional GAN paradigm is pix2pix, which uses pairs of images (one as the input and the other as the label) to learn to translate from one domain into another."
+
+"We do not cover pix2pix in detail because only about a year after its publication, it was eclipsed by another GAN variant that not only outperformed pix2pix’s performance on image-to-image translation tasks but also accomplished it without the need for paired images. The Cycle-Consistent Adversarial Network (or CycleGAN, as the technique came to be known) needs only two groups of images representing the two domains (for example, a group of black-and-white photos and a group of colored photos)."
