@@ -16,3 +16,14 @@
 
 ![arch_diagram](https://i.gyazo.com/3411191902ec95431c8004964be10ac5.png)
 
+### Implementation
+
+#### generator
+" we use embedding and element-wise multiplication to combine the random noise vector z and the label y into a joint representation"
+
+![impl_gen](https://i.gyazo.com/ccd08f5659144dcd2b19ed95949dd6dd.png)
+
+#### discriminator
+
+![impl_disc](https://i.gyazo.com/3fd670020c9f3930ac01fa4c1a4f63d0.png)
+
