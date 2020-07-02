@@ -13,6 +13,9 @@
   * generator is unchanged but discriminator now has an extra task which is to classify the digit (if its not fake)
   * in GAN, we use Discriminator to make Generator better. In SGAN, we goal is to make semi-supervised classifier (discriminator) as accurate as fully supervised classifier
   
+### Training objective of SGAN
+"The Generator’s goal is to aid this process by serving as a source of additional information (the fake data it produces) that helps the Generator learn the relevant patterns in the data, enhancing its classification accuracy. At the end of the training, the Generator gets discarded, and we use the trained Discriminator as a classifier."
+  
   
 ![sgan_arch](https://i.gyazo.com/d5f69f8f00aaf0b2963ff66052197c11.png)
 
