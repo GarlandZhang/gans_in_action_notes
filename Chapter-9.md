@@ -40,3 +40,25 @@ you may think of these as essentially the same, but off by one."
 
 ![arch](https://i.gyazo.com/fe2c6e140c9d768e449350247d3103cc.png)
 
+![network_breakdown](https://i.gyazo.com/13f11fcd9894acc62d5689fc149b7ca5.png)
+
+#### generator architecture
+
+![gen_arch](https://i.gyazo.com/090fe9de85677ccbb523f82f573ef9bb.png)
+
+Notes:
+* "We are using standard convolutional layers in the encoder.
+* From those, we create skip connections so that the information has an easier time propagating through the network. In the figure, this is denoted by the outlines and color-coding between the d0 to d3 and u1 to u4, respectively. You can see that half of the blocks in the decoder are coming from those skip connections (notice double the number of feature maps!).
+* The decoder uses deconvolutional layers with one final convolutional layer to upscale the image into the equivalent size of the original image."
+
+* "Encoder— Step 1 from figure 9.4: these are the convolutional layers that reduce the resolution of each feature map (layer or slice). This is the contraction path (d0 to d3).
+* Decoder— Step 3 from figure 9.4: these are the deconvolutional layers (transposed convolutions) that upscale the image back to 128 × 128. This is the expansion path (u1 to u4)."
+
+"To clarify, the autoencoder model here is useful in two ways. First, the overall CycleGAN architecture can be viewed as training two autoencoders.[5] Second, the U-Net itself has parts referred to as encoder and decoder."
+
+we perform downscaling and upscaling to "compress the image to the most meaningful representation, but at the same time are able to add back all the detail"
+
+#### discriminator architecture
+
+"One thing that may be confusing is that we do not get a single float as an output of this Discriminator, but rather a set of single-channel values that may be thought of as a set of mini-discriminators that we then average together. [...] this allows the design of the CycleGAN to be fully convolutional, meaning that it can scale relatively easily to higher resolutions."
+
