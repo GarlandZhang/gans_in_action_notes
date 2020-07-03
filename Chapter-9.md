@@ -62,3 +62,25 @@ we perform downscaling and upscaling to "compress the image to the most meaningf
 
 "One thing that may be confusing is that we do not get a single float as an output of this Discriminator, but rather a set of single-channel values that may be thought of as a set of mini-discriminators that we then average together. [...] this allows the design of the CycleGAN to be fully convolutional, meaning that it can scale relatively easily to higher resolutions."
 
+### Impl.
+
+"Two new terms are lambda_cycle and lambda_id. The second hyperparameter influences identity loss. The CycleGAN authors themselves note that this value influences how dramatic the changes are—especially early in the training process.[7] Setting a lower value leads to unnecessary changes: for example, completely inverting the colors early on"
+
+"The first hyperparameter—lambda_cycle—controls how strictly the cycle-consistency loss is enforced. Setting this value higher will ensure that your original and reconstructed images are as close together as possible."
+
+**see the notebook "cycle_gan.ipynb" for more details**
+
+in the output of the combined model, we have 6 losses, 3 of each for ABA or BAB cycle. The combined model trains the generator, so we are interested in 3 factors: 1) tricking the discriminator 2) retaining o.g. content 3) modifying content. Hence, we need 3 losses: 1) validity loss 2) reconstruction loss 3) identity loss
+
+
+### Augmented CycleGAN
+
+"Augmented CycleGAN gives us extra variables that drive the generative process.[10] In the same way that we have used latent space in Conditional GANs’ case, we can use it in the CycleGAN setting over and above what CycleGAN already does. [...] if we have an outline of a shoe in the A domain, we can generate a sample in the B domain, where the same type of shoe is blue. In traditional CycleGAN’s case, it would always be blue. But now, with the latent variables at our disposal, it can be orange, yellow, or whatever we choose."
+
+![aug_cycle](https://i.gyazo.com/fce78b50050d62a68016854e9c2ccacb.png)
+
+### Applications
+
+"Many CycleGAN (or CycleGAN-inspired) applications have been proposed in the short time it has been around. They usually revolve around creating simulated virtual environments and subsequently making them photorealistic. For example, imagine you need more training data for a self-driving car company: just simulate it in Unity or a GTA 5 graphics engine and then use CycleGAN to translate the data."
+
+
