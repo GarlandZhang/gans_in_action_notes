@@ -30,3 +30,8 @@ you may think of these as essentially the same, but off by one."
 ![table_loss](https://i.gyazo.com/90b60e2027d206f0e9cb815d7de7a42e.png)
 
 
+### architecture
+
+"The CycleGAN setup builds directly on the CGAN architecture and is, in essence, two CGANs joined together—or, as the CycleGAN authors themselves point out, an autoencoder"
+
+![arch](https://i.gyazo.com/e83047736e4ddec8048c2b05b2104573.png)
