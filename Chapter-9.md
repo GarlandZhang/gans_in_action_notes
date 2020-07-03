@@ -35,3 +35,8 @@ you may think of these as essentially the same, but off by one."
 "The CycleGAN setup builds directly on the CGAN architecture and is, in essence, two CGANs joined together—or, as the CycleGAN authors themselves point out, an autoencoder"
 
 ![arch](https://i.gyazo.com/e83047736e4ddec8048c2b05b2104573.png)
+
+"think of the two mappings as two autoencoders: F(G(a)) and G(F(b))."
+
+![arch](https://i.gyazo.com/fe2c6e140c9d768e449350247d3103cc.png)
+
