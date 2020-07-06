@@ -5,7 +5,7 @@
 
 "To be able to use the cycle-consistency loss, we need to have two Generators: one translating from A to B, called GAB, sometimes referred to as simply G, and then another one translating from B to A, called GBA, referred to as F for brevity. There are technically two losses—forward cycle-consistency loss and backward cycle-consistency loss—but because all they mean is that 
 
-![a[(https://i.gyazo.com/63adcb53f1c7e10b4327f692cedeabbf.png)
+![a](https://i.gyazo.com/63adcb53f1c7e10b4327f692cedeabbf.png)
 
 as well as , 
 
