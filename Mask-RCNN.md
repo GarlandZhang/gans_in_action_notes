@@ -51,5 +51,4 @@ ROI Pooling
   
   
 4. Segmentation Masks (steps 1-3 gives Faster R-CNN; steps 1-4 gives Mask-RCNN)
-"The mask branch is a convolutional network that takes the positive regions selected by the ROI classifier and generates masks for them"
-
+"The mask branch is a convolutional network that takes the positive regions selected by the ROI classifier and generates masks for them. The generated masks are low resolution: 28x28 pixels. But they are soft masks, represented by float numbers, so they hold more details than binary masks. The small mask size helps keep the mask branch light. During training, we scale down the ground-truth masks to 28x28 to compute the loss, and during inferencing we scale up the predicted masks to the size of the ROI bounding box and that gives us the final masks, one per object."
